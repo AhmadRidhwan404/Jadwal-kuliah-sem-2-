@@ -26,14 +26,8 @@ HTML5 – struktur halaman
 
 CSS3 – desain dan tata letak
 
-📂 Struktur File
-├── jadwal.html
-├── style.css
-└── README.md
-
-🚀 Cara Menjalankan
-
-Clone repository ini:
-
-git clone https://github.com/username/nama-repository.git
+📂 Struktur File 
+      ├── jadwal.html
+      ├── style.css
+      └── README.md
 
