@@ -1,0 +1,195 @@
+</head>
+<body>
+
+<div class="container">
+    <h1><i class="fas fa-calendar-alt"></i>
+        Jadwal Kuliah Saya</h1>
+
+    <div class="tab-nav">
+        <button class="tab-button active" data-tab="senin">Senin</button>
+        <button class="tab-button" data-tab="selasa">Selasa</button>
+        <button class="tab-button" data-tab="rabu">Rabu</button>
+        <button class="tab-button" data-tab="kamis">Kamis</button>
+        <button class="tab-button" data-tab="jumat">Jumat</button>
+    </div>
+
+    <div id="senin" class="tab-content active">
+        <div class="schedule-list">
+            <div class="schedule-item teori">
+                <div class="item-header">
+                    <span class="time">🗓07:00 - 09:30</span>
+                    <span class="type">Offline</span>
+                </div>
+                <div class="matkul-title">PKN</div>
+                <div class="details">
+                    <i class="fas fa-chalkboard-teacher"></i> Dosen:Annisa Maulana Majid, S.Kom., M.Kom
+                </div>
+                <div class="details">
+                    <i class="fas fa-map-marker-alt"></i> Ruang: PBU202
+                </div>
+            </div>
+
+            <div class="schedule-item lab">
+                <div class="item-header">
+                    <span class="time">09:30 - 12:00</span>
+                    <span class="type offline">Offline</span>
+                </div>
+                <div class="matkul-title">Techopreneurship</div>
+                <div class="details">
+                    <i class="fas fa-flask"></i> Dosen: Suherman, S.Kom., M.Kom
+                </div>
+                <div class="details">
+                    <i class="fas fa-desktop"></i> Ruang: IFE204
+                </div>
+            </div>
+            
+            <div class="schedule-item online">
+                <div class="item-header">
+                    <span class="time">12:30 - 15:00</span>
+                    <span class="type offline">Offline</span>
+                </div>
+                <div class="matkul-title">Algoritma Pemrograman</div>
+                <div class="details">
+                    <i class="fas fa-user-tie"></i> Dosen: Dr. Budi Santoso
+                </div>
+                <div class="details">
+                    <i class="fas fa-video"></i> Ruang : IFE205 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="selasa" class="tab-content">
+        <div class="schedule-list">
+            <div class="schedule-item teori">
+                <div class="item-header">
+                    <span class="time">07:00 - 09:30</span>
+                    <span class="type">Teori</span>
+                </div>
+                <div class="matkul-title">Aljabar Linier</div>
+                <div class="details">
+                    <i class="fas fa-chalkboard-teacher"></i> Dosen: Asep Suprianto 
+                </div>
+                <div class="details">
+                    <i class="fas fa-map-marker-alt"></i> Ruang: IFE206
+                </div>
+            </div>
+
+            <div class="schedule-item offline">
+                <div class="item-header">
+                    <span class="time">12:30 - 15:00</span>
+                    <span class="type offline">Offline</span>
+                </div>
+                <div class="matkul-title">Basis Data</div>
+                <div class="details">
+                    <i class="fas fa-user-tie"></i> Dosen: Muhammad Najmuddin Dwi Miharja, S.Kom., M.Kom
+                </div>
+                <div class="details">
+                    <i class="fas fa-video"></i> Ruang : IFE205 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rabu" class="tab-content">
+        <div class="schedule-list">
+            <div class="schedule-item offline">
+                <div class="item-header">
+                    <span class="time">07:00 - 09:30</span>
+                    <span class="type offline">Offline</span>
+                </div>
+                <div class="matkul-title">Bahasa Inggris</div>
+                <div class="details">
+                    <i class="fas fa-user-tie"></i> Dosen: Ugeng Budi Rahardjo, S.T., M.M.
+                </div>
+                <div class="details">
+                    <i class="fas fa-map-marker-alt"></i> Ruang: PBU201
+                </div>
+            </div>
+
+            <div class="schedule-item offline">
+                <div class="item-header">
+                    <span class="time">12:30 - 15:00</span>
+                    <span class="type offline">Offline</span>
+                </div>
+                <div class="matkul-title">Pendidikan Agama 2</div>
+                <div class="details">
+                    <i class="fas fa-user-tie"></i> Dosen: Dr. Kisanda Midisen, LC., MA.
+                </div>
+                <div class="details">
+                    <i class="fas fa-map-marker-alt"></i> Ruang: PBU201
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kamis" class="tab-content">
+        <div class="schedule-list">
+            <i>LIBURRR</i>
+            </div>
+    </div>
+
+    <div id="jumat" class="tab-content">
+        <div class="schedule-list">
+        <div class="schedule-item offline">
+                <div class="item-header">
+                    <span class="time">12:30 - 15:00</span>
+                    <span class="type offline">Offline</span>
+                </div>
+                <div class="matkul-title">Logika Matematika</div>
+                <div class="details">
+                    <i class="fas fa-user-tie"></i> Dosen: Ir. U. Darmanto Soer, M.Kom
+                </div>
+                <div class="details">
+                    <i class="fas fa-video"></i> Ruang: IFE208
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<script>
+    // JavaScript untuk mengelola tab hari
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Hapus kelas 'active' dari semua tombol dan konten
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Tambahkan kelas 'active' ke tombol yang diklik
+                button.classList.add('active');
+
+                // Tampilkan konten tab yang sesuai
+                const targetTabId = button.dataset.tab;
+                document.getElementById(targetTabId).classList.add('active');
+            });
+        });
+
+        // Setel hari ini sebagai tab aktif default
+        const today = new Date();
+        const dayOfWeek = today.getDay(); // 0 = Minggu, 1 = Senin, ..., 6 = Sabtu
+        const days = ['minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'];
+        let todayTabId = days[dayOfWeek];
+
+        // Jika hari ini Sabtu atau Minggu, default ke Senin
+        if (dayOfWeek === 0 || dayOfWeek === 6) {
+            todayTabId = 'senin';
+        }
+
+        // Aktifkan tab hari ini
+        const defaultTabButton = document.querySelector(`.tab-button[data-tab="${todayTabId}"]`);
+        if (defaultTabButton) {
+            defaultTabButton.click();
+        } else {
+             // Fallback ke Senin jika tidak ditemukan
+            document.querySelector('.tab-button[data-tab="senin"]').click();
+        }
+    });
+</script>
+
+</body>
+</html>
