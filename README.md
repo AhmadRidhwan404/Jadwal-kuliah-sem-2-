@@ -23,11 +23,9 @@ Tampilan tabel sederhana dan clean
 🛠️ Teknologi yang Digunakan
 
 HTML5 – struktur halaman
-
 CSS3 – desain dan tata letak
 
-📂 Struktur File 
-      ├── jadwal.html
-      ├── style.css
-      └── README.md
-
+### 📂 Struktur File 
+            ├── jadwal.html
+            ├── style.css
+            └── README.md
